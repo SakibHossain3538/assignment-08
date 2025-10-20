@@ -4,18 +4,27 @@ import iconDownloads from '../../../assets/iconDownloads.png'
 import iconRatings from '../../../assets/iconRatings.png'
 import iconReview from '../../../assets/iconReview.png'
 import Charts from '../../Components/charts/charts'
-import { useState } from 'react'
+import { useState,useEffect} from 'react'
 import { addToDb } from '../../utils/AddToDb'
+import { getStoredApp } from '../../utils/AddToDb'
 function AppDetails() {
     const {id}=useParams()
      const appId=parseInt(id)
     const data=useLoaderData()
     const apps=data.find(app=>app.id===appId)
      const [installed, setInstalled] = useState(false);
+useEffect(() => {
+  const storedAppData = getStoredApp();
+  const exists = storedAppData.some(app => app.id === appId);
+  if (exists) {
+    setInstalled(true);
+  }
+}, [appId]);
 
   const handleClick = (id) => {
+     addToDb(id)
     setInstalled(true); // mark as installed
-    addToDb(id)
+   
   };
     console.log(apps)
   return (
@@ -53,7 +62,7 @@ function AppDetails() {
                 </div>
                 <div className='md:m-10 mt-2'>
          <button className='btn inter gradient-bg2 inter text-xl p-6'      
-             onClick={()=>handleClick(apps.id)}
+             onClick={()=>handleClick(apps)}
             disabled={installed}>
                  {installed ? `Installed (${apps.size}MB)`  : 'Install'}
             </button>
