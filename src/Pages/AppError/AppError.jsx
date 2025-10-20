@@ -1,5 +1,6 @@
 import React from 'react'
 import appError from '../../../assets/appError.png'
+import { Link } from 'react-router';
 function AppError() {
   return (
    <div className='flex flex-col mt-[160px]'>
@@ -15,10 +16,10 @@ function AppError() {
    
           </div>
           <div className='mx-auto my-12'>
-              <a className="btn inter gradient-bg inter p-6">Go Back!</a>
+             <Link to='/apps'> <a className="btn inter gradient-bg inter p-6">Go Back!</a></Link>
           </div>
       </div>
   )
 }
 
-export default AppError
+export default AppError;

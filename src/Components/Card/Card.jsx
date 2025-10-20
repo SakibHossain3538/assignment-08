@@ -19,7 +19,7 @@ function Card({ data }) {
             <div className="card-actions justify-between">
               <div className="badge rounded-xl bg-[#F1F5E8] text-[#00D390] inter text-2xl m-5 p-5 flex items-center gap-2">
                 <img src={iconDownloads} alt="downloads" className="h-5 w-5" />
-                9M
+                {item.downloads}
               </div>
               <div className="badge rounded-xl bg-[#FFF0E1] text-[#FF8811] inter text-2xl m-5 p-5 flex items-center gap-2">
                 <img src={iconRatings} alt="ratings" className="h-5 w-5" />
