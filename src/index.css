@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:weight;
+  font-style:normal;
+}
+.gradient-text {
+  background: linear-gradient(135deg, #632EE3 0%, #9F62F2 100%);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-weight: bold;
+}
+.gradient-bg {
+  background: linear-gradient(135deg, #632EE3 0%, #9F62F2 100%);
+  color: white;
+  border-radius: 12px;
+  font-weight: 400;
+ font-size: 24px;
+}
+.gradient-bg2 {
+  background: linear-gradient(135deg, #54CF68 0%, #00827A 100%);
+  color: white;
+  border-radius: 12px;
+  font-weight: 400;
+ font-size: 24px;
+}

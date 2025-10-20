@@ -1,0 +1,328 @@
+[
+  {
+    "image": "https://i.ibb.co.com/Ld91DCKV/whatsapp.png",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "WhatsApp Messenger lets you chat, call, and share moments instantly with friends and family across the world — all for free. Enjoy secure end-to-end encryption, group chats, video calls, media sharing, and seamless syncing across your devices. Stay connected with personal or business contacts anywhere, anytime.",
+    "size": 35,
+    "reviews": "740M",
+    "ratingAvg": 4.3,
+    "downloads": "7.4B",
+    "ratings": [
+      { "name": "1 star", "count": "12M" },
+      { "name": "2 star", "count": "25M" },
+      { "name": "3 star", "count": "65M" },
+      { "name": "4 star", "count": "250M" },
+      { "name": "5 star", "count": "400M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/6JpTLvD8/tiktok.png",
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "id": 2,
+    "description": "TikTok is a global platform for creating and sharing short videos filled with creativity, fun, and entertainment. Discover trending content, join viral challenges, or showcase your own talent with easy-to-use editing tools, filters, and sounds. Connect with a massive global community that celebrates creativity every day.",
+    "size": 220,
+    "reviews": "520M",
+    "ratingAvg": 4.4,
+    "downloads": "6.9B",
+    "ratings": [
+      { "name": "1 star", "count": "15M" },
+      { "name": "2 star", "count": "30M" },
+      { "name": "3 star", "count": "80M" },
+      { "name": "4 star", "count": "200M" },
+      { "name": "5 star", "count": "415M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/bj359gCn/instagram.jpg",
+    "title": "Instagram",
+    "companyName": "Instagram, Inc.",
+    "id": 3,
+    "description": "Instagram helps you capture and share life’s moments instantly. Post photos, reels, and stories, go live with friends, explore trending content, and discover what’s happening around the world. Stay connected with people and communities that inspire you every day.",
+    "size": 150,
+    "reviews": "390M",
+    "ratingAvg": 4.5,
+    "downloads": "5.9B",
+    "ratings": [
+      { "name": "1 star", "count": "10M" },
+      { "name": "2 star", "count": "20M" },
+      { "name": "3 star", "count": "50M" },
+      { "name": "4 star", "count": "170M" },
+      { "name": "5 star", "count": "150M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/6JBWYBM6/youtube.jpg",
+    "title": "YouTube: Watch, Listen, Stream",
+    "companyName": "Google LLC",
+    "id": 4,
+    "description": "Watch millions of videos from creators around the globe — from music and gaming to news and learning. Subscribe to your favorite channels, explore trending videos, and download content to watch offline with YouTube Premium. Stream seamlessly on any device and connect with communities that match your interests.",
+    "size": 320,
+    "reviews": "450M",
+    "ratingAvg": 4.6,
+    "downloads": "8B",
+    "ratings": [
+      { "name": "1 star", "count": "8M" },
+      { "name": "2 star", "count": "16M" },
+      { "name": "3 star", "count": "40M" },
+      { "name": "4 star", "count": "200M" },
+      { "name": "5 star", "count": "420M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nMSkjbFP/google-Map.png",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 5,
+    "description": "Google Maps helps you explore the world with reliable navigation, real-time traffic updates, and turn-by-turn directions. Discover new places, local restaurants, and hidden gems. Whether walking, driving, or cycling, get the best routes and travel confidently anywhere.",
+    "size": 95,
+    "reviews": "120M",
+    "ratingAvg": 4.4,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": "3M" },
+      { "name": "2 star", "count": "7M" },
+      { "name": "3 star", "count": "20M" },
+      { "name": "4 star", "count": "45M" },
+      { "name": "5 star", "count": "50M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/snrF6wF/spotify.jpg",
+    "title": "Spotify: Music & Podcasts",
+    "companyName": "Spotify AB",
+    "id": 6,
+    "description": "Spotify gives you access to millions of songs, podcasts, and playlists from around the world. Discover new music, follow your favorite artists, and enjoy curated recommendations just for you. Download tracks for offline listening and enjoy high-quality streaming anywhere, anytime.",
+    "size": 110,
+    "reviews": "170M",
+    "ratingAvg": 4.7,
+    "downloads": "3.7B",
+    "ratings": [
+      { "name": "1 star", "count": "5M" },
+      { "name": "2 star", "count": "12M" },
+      { "name": "3 star", "count": "35M" },
+      { "name": "4 star", "count": "90M" },
+      { "name": "5 star", "count": "380M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/p68Fyz8N/netflix.jpg",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 7,
+    "description": "Netflix brings you the best movies, TV shows, documentaries, and exclusive originals from around the world. Stream or download your favorites for offline viewing, personalize your recommendations, and enjoy an ad-free experience across all your devices.",
+    "size": 190,
+    "reviews": "140M",
+    "ratingAvg": 4.4,
+    "downloads": "2.9B",
+    "ratings": [
+      { "name": "1 star", "count": "4M" },
+      { "name": "2 star", "count": "8M" },
+      { "name": "3 star", "count": "21M" },
+      { "name": "4 star", "count": "50M" },
+      { "name": "5 star", "count": "63M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/V43VLHD/temu.jpg",
+    "title": "Temu: Shop Like a Billionaire",
+    "companyName": "Temu Inc.",
+    "id": 8,
+    "description": "Temu is your one-stop shop for affordable products across fashion, electronics, beauty, and more. Explore exclusive deals, flash sales, and personalized recommendations. Enjoy fast delivery, secure payment, and a fun shopping experience that fits your lifestyle.",
+    "size": 120,
+    "reviews": "240M",
+    "ratingAvg": 4.3,
+    "downloads": "4.38B",
+    "ratings": [
+      { "name": "1 star", "count": "6M" },
+      { "name": "2 star", "count": "12M" },
+      { "name": "3 star", "count": "30M" },
+      { "name": "4 star", "count": "100M" },
+      { "name": "5 star", "count": "190M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/B5hp0Nw8/duolingo.jpg",
+    "title": "Duolingo: Learn Languages",
+    "companyName": "Duolingo, Inc.",
+    "id": 9,
+    "description": "Learn a new language for free with Duolingo! Master speaking, reading, listening, and writing through interactive bite-sized lessons. Earn rewards, track progress, and practice over 30 languages including Spanish, French, Japanese, and more — anytime, anywhere.",
+    "size": 75,
+    "reviews": "175M",
+    "ratingAvg": 4.7,
+    "downloads": "1.75B",
+    "ratings": [
+      { "name": "1 star", "count": "3M" },
+      { "name": "2 star", "count": "7M" },
+      { "name": "3 star", "count": "20M" },
+      { "name": "4 star", "count": "45M" },
+      { "name": "5 star", "count": "100M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Vc6ghJ13/zoom.jpg",
+    "title": "Zoom Cloud Meetings",
+    "companyName": "Zoom Video Communications",
+    "id": 10,
+    "description": "Join or host secure video meetings with Zoom. Collaborate easily with screen sharing, whiteboards, and chat. Perfect for remote work, online classes, or virtual meetups. Experience HD video and crystal-clear audio on any device, anywhere.",
+    "size": 200,
+    "reviews": "110M",
+    "ratingAvg": 4.4,
+    "downloads": "1.5B",
+    "ratings": [
+      { "name": "1 star", "count": "4M" },
+      { "name": "2 star", "count": "9M" },
+      { "name": "3 star", "count": "25M" },
+      { "name": "4 star", "count": "45M" },
+      { "name": "5 star", "count": "30M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LX8CRTZ5/slack.jpg",
+    "title": "Slack – Team Communication",
+    "companyName": "Slack Technologies",
+    "id": 11,
+    "description": "Slack makes team communication organized and efficient. Create channels for projects, share files, and integrate tools like Google Drive, Asana, or GitHub. Stay in sync with your team through instant messaging, voice calls, and collaborative workflows.",
+    "size": 90,
+    "reviews": "68M",
+    "ratingAvg": 4.2,
+    "downloads": "800M",
+    "ratings": [
+      { "name": "1 star", "count": "1M" },
+      { "name": "2 star", "count": "2.5M" },
+      { "name": "3 star", "count": "9M" },
+      { "name": "4 star", "count": "30M" },
+      { "name": "5 star", "count": "25M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gLKCS18T/snapchat.jpg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 12,
+    "description": "Snapchat is a fun and fast way to share the moment with friends and family. Snap photos, create stories, explore Spotlight, and chat in real time. With AR lenses and creative filters, express yourself and connect instantly through visuals.",
+    "size": 120,
+    "reviews": "210M",
+    "ratingAvg": 4.1,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": "5M" },
+      { "name": "2 star", "count": "11M" },
+      { "name": "3 star", "count": "32M" },
+      { "name": "4 star", "count": "90M" },
+      { "name": "5 star", "count": "140M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/XrY66YK8/google-Drive.png",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 13,
+    "description": "Google Drive offers secure cloud storage for your photos, documents, and files. Access your content from any device, collaborate with others in real time, and never lose important data with automatic backups and version history.",
+    "size": 140,
+    "reviews": "130M",
+    "ratingAvg": 4.6,
+    "downloads": "2.5B",
+    "ratings": [
+      { "name": "1 star", "count": "2M" },
+      { "name": "2 star", "count": "5M" },
+      { "name": "3 star", "count": "17M" },
+      { "name": "4 star", "count": "65M" },
+      { "name": "5 star", "count": "45M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HTL8hv2M/dropbox.png",
+    "title": "Dropbox: Cloud Storage",
+    "companyName": "Dropbox, Inc.",
+    "id": 14,
+    "description": "Dropbox is your smart workspace for storing, sharing, and collaborating on files. Sync across devices, share links securely, and access your documents offline. Designed for both personal and professional use, Dropbox keeps your data safe and organized.",
+    "size": 98,
+    "reviews": "50M",
+    "ratingAvg": 4.3,
+    "downloads": "900M",
+    "ratings": [
+      { "name": "1 star", "count": "0.8M" },
+      { "name": "2 star", "count": "2M" },
+      { "name": "3 star", "count": "7M" },
+      { "name": "4 star", "count": "25M" },
+      { "name": "5 star", "count": "30M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/b85Nw1W/airbnb.jpg",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "id": 15,
+    "description": "Discover amazing places to stay and unique travel experiences with Airbnb. From cozy homes to luxury villas, book stays worldwide or host guests yourself. Explore local attractions, plan trips, and enjoy trusted travel made easy.",
+    "size": 95,
+    "reviews": "56M",
+    "ratingAvg": 4.8,
+    "downloads": "750M",
+    "ratings": [
+      { "name": "1 star", "count": "0.6M" },
+      { "name": "2 star", "count": "1.5M" },
+      { "name": "3 star", "count": "7M" },
+      { "name": "4 star", "count": "18M" },
+      { "name": "5 star", "count": "35M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/35D3VJtB/whatasapp-Business.jpg",
+    "title": "WhatsApp Business",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 16,
+    "description": "WhatsApp Business helps small businesses communicate professionally with customers. Create a business profile, showcase products, set automated replies, and manage chats efficiently. Stay connected and grow your business with trusted messaging tools.",
+    "size": 45,
+    "reviews": "35M",
+    "ratingAvg": 4.5,
+    "downloads": "1.2B",
+    "ratings": [
+      { "name": "1 star", "count": "0.4M" },
+      { "name": "2 star", "count": "1.2M" },
+      { "name": "3 star", "count": "7M" },
+      { "name": "4 star", "count": "20M" },
+      { "name": "5 star", "count": "11M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/27wYMn7L/paypal.jpg",
+    "title": "PayPal – Send & Receive Money",
+    "companyName": "PayPal, Inc.",
+    "id": 17,
+    "description": "PayPal makes it easy to send, receive, and manage money securely. Pay for goods and services, transfer funds globally, and keep transactions protected with advanced fraud prevention. Simple, fast, and trusted by millions worldwide.",
+    "size": 60,
+    "reviews": "88M",
+    "ratingAvg": 4.7,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": "3M" },
+      { "name": "2 star", "count": "8M" },
+      { "name": "3 star", "count": "20M" },
+      { "name": "4 star", "count": "35M" },
+      { "name": "5 star", "count": "20M" }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Fb2H7NJ8/linkedin.jpg",
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "id": 18,
+    "description": "LinkedIn connects professionals worldwide. Build your career, network with experts, search for jobs, and share insights. Stay updated with industry news and learn new skills with LinkedIn Learning — all from one professional platform.",
+    "size": 70,
+    "reviews": "64M",
+    "ratingAvg": 4.4,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": "3M" },
+      { "name": "2 star", "count": "8M" },
+      { "name": "3 star", "count": "20M" },
+      { "name": "4 star", "count": "35M" },
+      { "name": "5 star", "count": "20M" }
+    ]
+  }
+
+
+]
