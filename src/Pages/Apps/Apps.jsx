@@ -30,16 +30,20 @@ function Apps() {
       </div>
   <div>
     {filteredApps.length === 0 ? (
-        <div className='text-center text-3xl text-gray-500 inter mt-[100px] h-[300px]'>
+        <div className='text-center text-5xl text-gray-500 inter mt-[100px] h-[300px]'>
            No Apps Available
+           <div className='mt-5 text-3xl'>Search Again</div>
+           <div className='text-2xl'>App Deck Will Serve You</div>
         </div>
+        
       ) : (
         <div
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 
           2xl:grid-cols-4 gap-10 mt-[70px]'
         >
       {filteredApps.map((item, index) => (
-        <Link to={`/apps/${item.id}`}><div key={index} className="card bg-base-100 w-96 shadow-sm mx-auto">
+        <Link to={`/apps/${item.id}`}><div key={index} className="card bg-base-100 w-96 shadow-sm mx-auto
+          transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg">
           <figure className="m-4">
             <img src={item.image} alt={item.title} className='rounded-xl shadow-sm border-1 border-gray-200'/>
           </figure>

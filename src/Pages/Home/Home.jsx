@@ -6,7 +6,7 @@ function Home() {
   return (
   <div>
     <Suspense fallback="loading.......">
-    <Link to='/'><Hero data={data} ></Hero></Link>
+    <Hero data={data} ></Hero>
     </Suspense> 
   </div>
   )

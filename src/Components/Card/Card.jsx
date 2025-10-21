@@ -10,7 +10,8 @@ function Card({ data }) {
 
 
       {data.slice(0,8).map((item, index) => (
-        <div key={index} className="card bg-base-100 w-96 shadow-sm mx-auto">
+        <div key={index} className="card bg-base-100 w-96 shadow-sm mx-auto  
+         transform transition-transform duration-300 hover:-translate-y-3 hover:shadow-lg:">
           <figure className="m-4">
             <img src={item.image} alt={item.title} className='rounded-xl shadow-sm border-1 border-gray-200'/>
           </figure>

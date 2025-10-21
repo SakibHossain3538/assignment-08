@@ -1,18 +1,19 @@
 import logo from '../../../assets/logo.png'
 import { FaGithub } from "react-icons/fa";
-import { Link } from 'react-router';
+import { Link,NavLink} from 'react-router';
 function Navbar() {
      
 const Links = (
      <ul className='lg:flex lg:flex-row'>
     <li className="inter text-black text-xl inter font-medium">
-      <Link to="/">Home</Link>
+       <NavLink to='/'>Home</NavLink>
     </li>
     <li className="inter text-black font-medium text-xl inter">
-      <Link to="/apps">Apps</Link>
+      <NavLink to="/apps"> Apps</NavLink>
+    
     </li>
     <li className="inter text-black font-medium text-xl inter">
-      <Link to="/installation">Installation</Link>
+      <NavLink to="/installation">Installation</NavLink>
     </li>
 </ul>
 )
@@ -35,8 +36,8 @@ const Links = (
         {Links}
       </ul>
     </div>
-    <Link to='/'><img src={logo} alt="" className='h-[30px] w-[30px] '/></Link>
-    <a className="text-3xl inter gradient-text">AppDeck</a>
+    <Link to='/'><img src={logo} alt="" className='h-[30px] w-[30px] '/>
+    <a className="text-3xl inter gradient-text">AppDeck</a></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex flex-col">
@@ -44,7 +45,8 @@ const Links = (
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn inter gradient-bg inter text-2xl"><span><FaGithub /></span>Contribute</a>
+    <a className="btn inter gradient-bg inter text-2xl" 
+    onClick={() => window.open("https://github.com/SakibHossain3538", "_blank")}><span><FaGithub /></span>Contribute</a>
   </div>
 </div>
     </div>

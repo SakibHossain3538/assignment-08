@@ -39,7 +39,7 @@ function Installation() {
       <div className='flex flex-row justify-between mt-[40px] ml-[40px] mr-[40px]'> 
           <div className='inter font-semibold text-2xl '>({installedApps.length}) Apps Found</div>
               <div className="dropdown w-[300px] ">
-  <div tabIndex={0} role="button" className="btn m-1 md:pr-[100px] inter text-xl 
+  <div tabIndex={0} role="button" className="btn m-1  inter text-xl 
   text-[#627382]">
     <div className='flex flex-row'>Sort By {sortType === "" ? "Default" : sortType} 
   {<IoMdArrowDropdown className='text-2xl ml-1.5'/>} </div>
