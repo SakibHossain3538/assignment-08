@@ -18,7 +18,7 @@ function Apps() {
       );
       setFilteredApps(filtered);
       setLoading(false);
-    },200); // 0.5s debounce for smoother loader
+    },200);
 
     return () => clearTimeout(timer);
   }, [query, data]);

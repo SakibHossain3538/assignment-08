@@ -25,7 +25,7 @@ function AppDetails() {
 
   const handleClick = (id) => {
      addToDb(id)
-    setInstalled(true); // mark as installed
+    setInstalled(true); 
     notify();
    
   };

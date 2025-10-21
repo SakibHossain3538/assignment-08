@@ -37,7 +37,7 @@ const Links = (
       </ul>
     </div>
     <Link to='/' className='flex flex-row'><img src={logo} alt="" className='h-[30px] w-[30px]'/>
-    <a className="text-3xl inter gradient-text">AppDeck</a></Link>
+    <div className="text-3xl inter gradient-text">AppDeck</div></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex flex-col">
