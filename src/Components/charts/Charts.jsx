@@ -1,25 +1,62 @@
-import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import React from 'react';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts';
+import { useParams,useLoaderData } from 'react-router';
+const parseCount = (str) => {
+  if (str.endsWith('M')) return parseFloat(str) * 1000000
+  return parseFloat(str);
+}
+const SimpleBarChart = () => {
+  const {id}=useParams()
+      const appId=parseInt(id)
+      const datas=useLoaderData()
+      const apps=datas.find(app=>app.id===appId)
+      const parseRatings=apps.ratings.map(rating=>({
+        name:rating.name,
+        value:parseCount(rating.count)
+      }))  
 
-const data = [
-  { name: 'Page A', uv: 400, pv: 2400, amt: 2400 },
-  { name: 'Page B', uv: 300, pv: 1398, amt: 2210 },
-  { name: 'Page C', uv: 200, pv: 9800, amt: 2290 },
-];
+  return (
+    <div style={{ width: '100%', maxWidth: '700px', height: 250 }}>
+      <ResponsiveContainer>
+        <BarChart
+          layout="vertical"
+          data={parseRatings}
+          margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
+        >
+          <XAxis
+            type="category"
+            tick={{ fontSize: 12 }}
+            axisLine={false}
+            tickLine={false}
+          />
+          <YAxis
+            type="category"
+            dataKey="name"
+            tick={{ fontSize: 12 }}
+            axisLine={false}
+            tickLine={false}
+          />
+          <Tooltip
+            formatter={(value) => `${value.toLocaleString()}`}
+            cursor={{ fill: 'rgba(0,0,0,0.05)' }}
+          />
+          <Bar
+            dataKey="value"
+            fill="#FF8811"
+            radius={[5, 5, 5, 5]}
+            barSize={20}
+          />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+};
 
-const Charts = (
-  <BarChart
-    width={600}
-    height={300}
-    data={data}
-    layout="vertical" // This makes bars horizontal
-    margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
-  >
-    <XAxis type="number" stroke="#8884d8" />  {/* now X is numeric */}
-    <YAxis type="category" dataKey="name" stroke="#8884d8" /> {/* now Y is category */}
-    <Tooltip />
-    <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-    <Bar dataKey="uv" fill="#8884d8" barSize={20} />
-  </BarChart>
-);
-
-export default Charts;
+export default SimpleBarChart;

@@ -3,8 +3,8 @@ import { useParams,useLoaderData} from 'react-router'
 import iconDownloads from '../../../assets/iconDownloads.png'
 import iconRatings from '../../../assets/iconRatings.png'
 import iconReview from '../../../assets/iconReview.png'
-import Charts from '../../Components/charts/charts'
 import { useState,useEffect} from 'react'
+import Charts from '../../Components/charts/charts'
 import { addToDb } from '../../utils/AddToDb'
 import { getStoredApp } from '../../utils/AddToDb'
 import { ToastContainer, toast } from 'react-toastify';
@@ -64,7 +64,7 @@ function AppDetails() {
                    
                 </div>
                 <div className='md:m-10 mt-2'>
-         <button className='btn inter gradient-bg2 inter text-xl p-6'      
+         <button className='btn inter gradient-bg2 inter md:text-xl md:p-6'      
              onClick={()=>handleClick(apps)}
             disabled={installed}>
                  {installed ? `Installed (${apps.size}MB)`  : 'Install'}
@@ -76,7 +76,7 @@ function AppDetails() {
         </div>
         
         <div className='m-14'>
-            {/* <Charts></Charts> */}
+            <Charts ratings={apps}></Charts>
         </div>
         <div className='inter mb-2.5 font-bold text-3xl m-20'>
             Description
