@@ -36,7 +36,7 @@ const Links = (
         {Links}
       </ul>
     </div>
-    <Link to='/'><img src={logo} alt="" className='h-[30px] w-[30px] '/>
+    <Link to='/' className='flex flex-row'><img src={logo} alt="" className='h-[30px] w-[30px]'/>
     <a className="text-3xl inter gradient-text">AppDeck</a></Link>
   </div>
   <div className="navbar-center hidden lg:flex">

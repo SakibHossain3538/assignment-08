@@ -6,7 +6,7 @@ import Installation from "../Pages/Installation/Installation";
 import PageError from "../Pages/PageError/PageError";
 import AppDetails from "../Pages/AppDetails/AppDetails";
 import AppError from "../Pages/AppError/AppError";
-
+import PageLoader from "../Components/LoadingPage/LoadingPage";
 export const router = createBrowserRouter([
   {
     path:"/",
@@ -36,6 +36,9 @@ export const router = createBrowserRouter([
            loader: () => fetch("/apps.json")
           .then(res => res.json()),
            Component:AppDetails
+        },{
+          path:"/loading",
+          Component: PageLoader
         }
     ]
 

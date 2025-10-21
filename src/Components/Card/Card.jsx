@@ -1,6 +1,7 @@
 import React from 'react'
 import iconDownloads from '../../../assets/iconDownloads.png'
 import iconRatings from '../../../assets/iconRatings.png'
+import { Link } from 'react-router'
 
 function Card({ data }) {
   return (
@@ -10,7 +11,7 @@ function Card({ data }) {
 
 
       {data.slice(0,8).map((item, index) => (
-        <div key={index} className="card bg-base-100 w-96 shadow-sm mx-auto  
+       <Link to={`/apps/${item.id}`}><div key={index} className="card bg-base-100 w-96 shadow-sm mx-auto  
          transform transition-transform duration-300 hover:-translate-y-3 hover:shadow-lg:">
           <figure className="m-4">
             <img src={item.image} alt={item.title} className='rounded-xl shadow-sm border-1 border-gray-200'/>
@@ -29,6 +30,7 @@ function Card({ data }) {
             </div>
           </div>
         </div>
+        </Link> 
       ))} </div>
      <div><button className='inter px-4 py-1 rounded-xl gradient-bg font-bold mt-[70px]'> Show All</button>
      </div>

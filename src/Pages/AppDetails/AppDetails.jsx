@@ -7,13 +7,15 @@ import Charts from '../../Components/charts/charts'
 import { useState,useEffect} from 'react'
 import { addToDb } from '../../utils/AddToDb'
 import { getStoredApp } from '../../utils/AddToDb'
+import { ToastContainer, toast } from 'react-toastify';
 function AppDetails() {
-    const {id}=useParams()
-     const appId=parseInt(id)
-    const data=useLoaderData()
-    const apps=data.find(app=>app.id===appId)
-     const [installed, setInstalled] = useState(false);
-useEffect(() => {
+      const {id}=useParams()
+      const appId=parseInt(id)
+      const data=useLoaderData()
+      const apps=data.find(app=>app.id===appId)
+      const [installed, setInstalled] = useState(false);
+      const notify = () => toast("Installed");
+  useEffect(() => {
   const storedAppData = getStoredApp();
   const exists = storedAppData.some(app => app.id === appId);
   if (exists) {
@@ -24,6 +26,7 @@ useEffect(() => {
   const handleClick = (id) => {
      addToDb(id)
     setInstalled(true); // mark as installed
+    notify();
    
   };
     console.log(apps)
@@ -66,6 +69,8 @@ useEffect(() => {
             disabled={installed}>
                  {installed ? `Installed (${apps.size}MB)`  : 'Install'}
             </button>
+                    <ToastContainer />
+
          </div>
             </div>  
         </div>

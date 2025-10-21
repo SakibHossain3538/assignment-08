@@ -1,14 +1,14 @@
-import React from 'react'
 import { IoMdArrowDropdown } from "react-icons/io";
-import { useLoaderData} from 'react-router';
 import { useEffect,useState } from 'react';
 import { getStoredApp, removeFromDb } from '../../utils/AddToDb';
 import iconRatings from "../../../assets/iconRatings.png"
 import iconDownloads from "../../../assets/iconDownloads.png"
+import { ToastContainer, toast } from 'react-toastify';
+
 function Installation() {
-  // const allApps = useLoaderData(); 
   const [installedApps, setInstalledApps] = useState([]);
-    const [sortType, setSortType] = useState("")
+  const [sortType, setSortType] = useState("")
+  const notify = () => toast("Uninstalled");
  useEffect(() => {
   const storedApps = getStoredApp();
   setInstalledApps(storedApps);
@@ -18,16 +18,25 @@ function Installation() {
     removeFromDb(id)
     setInstalledApps(prev=>prev.filter(app=>app.id !== id))
   }
-  const handleSort = (type) => {
-    setSortType(type);
-    let sortedApps = [...installedApps];
-    if (type === "size") {
-      sortedApps.sort((a, b) => a.size - b.size);
-    } else if (type === "rating") {
-      sortedApps.sort((a, b) => b.ratingAvg - a.ratingAvg); 
-    }
-    setInstalledApps(sortedApps);
-  };
+  const parseDownloads = (value) => {
+  if (!value) return 0;
+  let num = parseFloat(value.replace(/[^\d\.]/g, ""));
+  if (value.includes("M")) num *= 1000000;
+  if(value.includes("B")) num*= 1000000000;
+  else if (value.includes("K")) num *= 1000;
+  return num;
+};
+const handleSort = (type) => {
+  setSortType(type);
+  let sortedApps = [...installedApps];
+   if (type === "high-low") {
+    sortedApps.sort((a, b) => parseDownloads(b.downloads) - parseDownloads(a.downloads));
+  } 
+  else if (type === "low-high") {
+    sortedApps.sort((a, b) => parseDownloads(a.downloads) - parseDownloads(b.downloads));
+  }
+  setInstalledApps(sortedApps);
+};
   return (
      <div className='mt-[80px]'>
       <div>
@@ -46,8 +55,8 @@ function Installation() {
   </div>
   <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 
    w-52 p-2 shadow-sm">
-    <li><a  onClick={() => handleSort("size")}>Size</a></li>
-    <li><a onClick={() => handleSort("rating")}>Ratings</a></li>
+    <li><a onClick={() => handleSort("high-low")}>Downloads (High-Low)</a></li>
+    <li><a onClick={() => handleSort("low-high")}>Downloads (Low-High)</a></li>
   </ul>
 </div>
       </div>
@@ -77,10 +86,13 @@ function Installation() {
 </div>
     </div>
     <button className='btn md:my-auto ml-auto mr-9 mb-2.5 font-semibold
-     gradient-bg2 p-[20px] py-6' onClick={()=>handleUninstall(installed.id)}>Uninstall</button>
-</div>
+     gradient-bg2 p-[20px] py-6' onClick={()=>{handleUninstall(installed.id),notify()}}>Uninstall</button>
+   
+      </div>
+      
           ))
         }
+          <ToastContainer />
       </div>
       </div>
     </div>
